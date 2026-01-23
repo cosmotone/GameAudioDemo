@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
+using FMOD.Studio;
 
 namespace HappyHarvest
 {
@@ -10,30 +12,32 @@ namespace HappyHarvest
     /// </summary>
     public class AmbienceBlender : MonoBehaviour
     {
-        enum State
+        /*enum State
         {
             BlendToNight,
             BlendToDay,
             Playing
-        }
+        }*/
         
-        public AudioSource DayAmbienceSource;
-        public AudioSource NightAmbienceSource;
+        //public AudioSource DayAmbienceSource;
+        //public AudioSource NightAmbienceSource;
+        //public EventReference AmbienceEvent;
+        public string DayParameterName = "Day";
 
-        private State m_CurrentState;
-        private float m_CurrentBlendRatio = 0.0f;
+        //private State m_CurrentState;
+        //private float m_CurrentBlendRatio = 0.0f; 
         
         private void Start()
         {
-            DayAmbienceSource.volume = 0.0f;
-            NightAmbienceSource.volume = 0.0f;
+            //DayAmbienceSource.volume = 0.0f;
+            //NightAmbienceSource.volume = 0.0f;
 
-            m_CurrentState = State.Playing;
+            //m_CurrentState = State.Playing;
         }
 
         private void Update()
         {
-            if (m_CurrentState != State.Playing)
+            /*if (m_CurrentState != State.Playing)
             {
                 bool isFinished = AdvanceBlending();
                 switch (m_CurrentState)
@@ -52,27 +56,29 @@ namespace HappyHarvest
                 {
                     m_CurrentState = State.Playing;
                 }
-            }
+            }*/
         }
 
-        bool AdvanceBlending()
+        /*bool AdvanceBlending()
         {
             m_CurrentBlendRatio = Mathf.Clamp01(m_CurrentBlendRatio + Time.deltaTime);
             return Mathf.Approximately(m_CurrentBlendRatio, 1.0f);
-        }
+        }*/
 
         //Call this from an event in the editor or another script to start blending to the day ambience
         public void BlendToDay()
         {
-            m_CurrentState = State.BlendToDay;
-            m_CurrentBlendRatio = 0.0f;
+            //m_CurrentState = State.BlendToDay;
+            //m_CurrentBlendRatio = 0.0f;
+            RuntimeManager.StudioSystem.setParameterByName(DayParameterName, 1.0f);
         }
 
         //Call this from an event in the editor or another script to start blending to the night ambience
         public void BlendToNight()
         {
-            m_CurrentState = State.BlendToNight;
-            m_CurrentBlendRatio = 0.0f;
+            //m_CurrentState = State.BlendToNight;
+            //m_CurrentBlendRatio = 0.0f;
+            RuntimeManager.StudioSystem.setParameterByName(DayParameterName, 0.0f);
         }
     }
 }

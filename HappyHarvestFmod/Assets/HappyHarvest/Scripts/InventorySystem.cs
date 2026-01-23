@@ -5,6 +5,8 @@ using Template2DCommon;
 using UnityEngine;
 using UnityEngine.UIElements;
 using Random = UnityEngine.Random;
+using static HappyHarvest.DayEventHandler;
+
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -48,11 +50,16 @@ namespace HappyHarvest
 
             if (used)
             {
-                if (EquippedItem.UseSound != null && EquippedItem.UseSound.Length > 0)
+                if (!EquippedItem.FmodEvent.IsNull)
                 {
-                    SoundManager.Instance.PlaySFXAt(GameManager.Instance.Player.transform.position,
-                        EquippedItem.UseSound[Random.Range(0, EquippedItem.UseSound.Length)], false);
+                    SoundManager.Instance.PlayFmodEvent(EquippedItem.FmodEvent, GameManager.Instance.Player.transform.position);
                 }
+
+                /*if (EquippedItem.UseSound != null && EquippedItem.UseSound.Length > 0)
+                {
+                    //SoundManager.Instance.PlaySFXAt(GameManager.Instance.Player.transform.position,
+                        //EquippedItem.UseSound[Random.Range(0, EquippedItem.UseSound.Length)], false);
+                }*/
 
                 if (EquippedItem.Consumable)
                 {

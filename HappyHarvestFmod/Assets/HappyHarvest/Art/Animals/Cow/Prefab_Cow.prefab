@@ -121,8 +121,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_CategoryHash: 0
-  m_labelHash: 0
+  m_CategoryHash: 6.7713423e-15
+  m_labelHash: 6.7713423e-15
   m_SpriteKey: 0
   m_SpriteHash: 468312650
 --- !u!1001 &6542295470962961860
@@ -181,6 +181,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 883505779510216539, guid: 96e3d9dd1d3738946967b0ff98884679, type: 3}
+      propertyPath: m_labelHash
+      value: 1.3841007e-35
+      objectReference: {fileID: 0}
+    - target: {fileID: 883505779510216539, guid: 96e3d9dd1d3738946967b0ff98884679, type: 3}
+      propertyPath: m_CategoryHash
+      value: 0.000007525678
+      objectReference: {fileID: 0}
+    - target: {fileID: 1468397025044854331, guid: 96e3d9dd1d3738946967b0ff98884679, type: 3}
+      propertyPath: m_labelHash
+      value: 0.01265267
+      objectReference: {fileID: 0}
+    - target: {fileID: 1468397025044854331, guid: 96e3d9dd1d3738946967b0ff98884679, type: 3}
+      propertyPath: m_CategoryHash
+      value: 3.7551097e-31
+      objectReference: {fileID: 0}
     - target: {fileID: 1706223452908522069, guid: 96e3d9dd1d3738946967b0ff98884679, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.5
@@ -201,6 +217,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 2666697690059535359, guid: a4d6d8eafc5e0e444bee21e8e7741042, type: 3}
+    - target: {fileID: 1805582545501345281, guid: 96e3d9dd1d3738946967b0ff98884679, type: 3}
+      propertyPath: m_labelHash
+      value: 0.011212436
+      objectReference: {fileID: 0}
+    - target: {fileID: 1805582545501345281, guid: 96e3d9dd1d3738946967b0ff98884679, type: 3}
+      propertyPath: m_CategoryHash
+      value: 0.011212436
+      objectReference: {fileID: 0}
     - target: {fileID: 1968605304178458783, guid: 96e3d9dd1d3738946967b0ff98884679, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.24443659
@@ -233,6 +257,14 @@ PrefabInstance:
       propertyPath: m_SpriteLibraryAsset
       value: 
       objectReference: {fileID: 7108339969198208228, guid: 6f3960ec2a8fa224b9f39564593f438e, type: 3}
+    - target: {fileID: 3736159750662277178, guid: 96e3d9dd1d3738946967b0ff98884679, type: 3}
+      propertyPath: m_labelHash
+      value: 0.00000008140397
+      objectReference: {fileID: 0}
+    - target: {fileID: 3736159750662277178, guid: 96e3d9dd1d3738946967b0ff98884679, type: 3}
+      propertyPath: m_CategoryHash
+      value: 0.00000008140397
+      objectReference: {fileID: 0}
     - target: {fileID: 4016578150646973681, guid: 96e3d9dd1d3738946967b0ff98884679, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.9147318
@@ -266,6 +298,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -163092028523887571, guid: a4d6d8eafc5e0e444bee21e8e7741042, type: 3}
     - target: {fileID: 4970240365513588057, guid: 96e3d9dd1d3738946967b0ff98884679, type: 3}
+      propertyPath: FmodEvent.Path
+      value: event:/SFX_Cow
+      objectReference: {fileID: 0}
+    - target: {fileID: 4970240365513588057, guid: 96e3d9dd1d3738946967b0ff98884679, type: 3}
+      propertyPath: FmodEvent.Guid.Data1
+      value: -2051309128
+      objectReference: {fileID: 0}
+    - target: {fileID: 4970240365513588057, guid: 96e3d9dd1d3738946967b0ff98884679, type: 3}
+      propertyPath: FmodEvent.Guid.Data2
+      value: 1317844724
+      objectReference: {fileID: 0}
+    - target: {fileID: 4970240365513588057, guid: 96e3d9dd1d3738946967b0ff98884679, type: 3}
+      propertyPath: FmodEvent.Guid.Data3
+      value: 1666889354
+      objectReference: {fileID: 0}
+    - target: {fileID: 4970240365513588057, guid: 96e3d9dd1d3738946967b0ff98884679, type: 3}
+      propertyPath: FmodEvent.Guid.Data4
+      value: 913632000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4970240365513588057, guid: 96e3d9dd1d3738946967b0ff98884679, type: 3}
       propertyPath: 'AnimalSound.Array.data[0]'
       value: 
       objectReference: {fileID: 8300000, guid: f333006bc6b124a499d7bdcc9f2531bd, type: 3}
@@ -273,6 +325,14 @@ PrefabInstance:
       propertyPath: 'AnimalSound.Array.data[1]'
       value: 
       objectReference: {fileID: 8300000, guid: f62869ef885c52a4cad3a341d0cbcc92, type: 3}
+    - target: {fileID: 5074203288639003733, guid: 96e3d9dd1d3738946967b0ff98884679, type: 3}
+      propertyPath: m_labelHash
+      value: 2.2051663e-19
+      objectReference: {fileID: 0}
+    - target: {fileID: 5074203288639003733, guid: 96e3d9dd1d3738946967b0ff98884679, type: 3}
+      propertyPath: m_CategoryHash
+      value: 2.2051663e-19
+      objectReference: {fileID: 0}
     - target: {fileID: 5581135390848796014, guid: 96e3d9dd1d3738946967b0ff98884679, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -281,6 +341,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -4047050609471339400, guid: a4d6d8eafc5e0e444bee21e8e7741042, type: 3}
+    - target: {fileID: 6311579895069488226, guid: 96e3d9dd1d3738946967b0ff98884679, type: 3}
+      propertyPath: m_labelHash
+      value: 6.6595564e-15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6311579895069488226, guid: 96e3d9dd1d3738946967b0ff98884679, type: 3}
+      propertyPath: m_CategoryHash
+      value: 6.6595564e-15
+      objectReference: {fileID: 0}
     - target: {fileID: 6994617667517183847, guid: 96e3d9dd1d3738946967b0ff98884679, type: 3}
       propertyPath: m_LocalScale.y
       value: 0.003954053
@@ -293,6 +361,14 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0.7071068
       objectReference: {fileID: 0}
+    - target: {fileID: 7522424198831371154, guid: 96e3d9dd1d3738946967b0ff98884679, type: 3}
+      propertyPath: m_labelHash
+      value: 0.0000003633638
+      objectReference: {fileID: 0}
+    - target: {fileID: 7522424198831371154, guid: 96e3d9dd1d3738946967b0ff98884679, type: 3}
+      propertyPath: m_CategoryHash
+      value: 0.0000003633638
+      objectReference: {fileID: 0}
     - target: {fileID: 7603948318466802362, guid: 96e3d9dd1d3738946967b0ff98884679, type: 3}
       propertyPath: m_Controller
       value: 
@@ -301,6 +377,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -5412332545563771232, guid: a4d6d8eafc5e0e444bee21e8e7741042, type: 3}
+    - target: {fileID: 8163321299418530247, guid: 96e3d9dd1d3738946967b0ff98884679, type: 3}
+      propertyPath: m_labelHash
+      value: 3.1049663e-15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8163321299418530247, guid: 96e3d9dd1d3738946967b0ff98884679, type: 3}
+      propertyPath: m_CategoryHash
+      value: 3.1049663e-15
+      objectReference: {fileID: 0}
     - target: {fileID: 8592614999053386599, guid: 96e3d9dd1d3738946967b0ff98884679, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.8264047

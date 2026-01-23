@@ -20,6 +20,12 @@ MonoBehaviour:
   BuyPrice: 10
   VisualPrefab: {fileID: 3853442708067445921, guid: 470a5537bd597904eb22580ac5265bd9, type: 3}
   PlayerAnimatorTriggerUse: Planting
-  UseSound:
-  - {fileID: 8300000, guid: 9440290ca86f48c41a2abfd592a57e6c, type: 3}
+  UseSound: []
+  FmodEvent:
+    Guid:
+      Data1: -294359874
+      Data2: 1207421152
+      Data3: 1616478355
+      Data4: 853561370
+    Path: event:/SFX_PlantingCrop
   PlantedCrop: {fileID: 11400000, guid: dc17a381c852afb4b9b3bb78384a45c1, type: 2}

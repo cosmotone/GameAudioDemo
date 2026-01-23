@@ -20,7 +20,11 @@ MonoBehaviour:
   BuyPrice: -1
   VisualPrefab: {fileID: 6293427588140092189, guid: e083dd32653b824429d586636af605d3, type: 3}
   PlayerAnimatorTriggerUse: ToolSwing
-  UseSound:
-  - {fileID: 8300000, guid: 578cdfa7c359f9148959ea4c27c6ab6e, type: 3}
-  - {fileID: 8300000, guid: 3ab370288970f224996abfb1580bc22e, type: 3}
-  - {fileID: 8300000, guid: 18a4e89c3df621740b2a2174e1c333a9, type: 3}
+  UseSound: []
+  FmodEvent:
+    Guid:
+      Data1: -260403015
+      Data2: 1225039832
+      Data3: 351917486
+      Data4: -1382555898
+    Path: event:/SFX_DiggingShovel

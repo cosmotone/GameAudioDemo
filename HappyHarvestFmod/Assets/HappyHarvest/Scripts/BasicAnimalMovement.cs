@@ -19,6 +19,7 @@ namespace HappyHarvest
         [Min(0)] public float Speed = 2.0f;
 
         [Header("Audio")] public AudioClip[] AnimalSound;
+        public FMODUnity.EventReference FmodEvent;
         public float MinRandomSoundTime;
         public float MaxRandomSoundTime;
 
@@ -52,8 +53,9 @@ namespace HappyHarvest
             m_SoundTimer -= Time.deltaTime;
             if (m_SoundTimer <= 0.0f)
             {
-                SoundManager.Instance.PlaySFXAt(transform.position, AnimalSound[Random.Range(0, AnimalSound.Length)],
-                    true);
+                //SoundManager.Instance.PlaySFXAt(transform.position, AnimalSound[Random.Range(0, AnimalSound.Length)],
+                    //true);
+                SoundManager.Instance.PlayFmodEvent(FmodEvent, transform.position);
                 m_SoundTimer = Random.Range(MinRandomSoundTime, MaxRandomSoundTime);
             }
 

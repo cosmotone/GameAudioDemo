@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{17e50d61-20b2-47b2-99a3-1426e2269525}">
+		<property name="assetPath">
+			<value>OriginalAudio/Character/Chewing an apple-001.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>1.1147083333333334</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{22440e41-3bc3-4b99-acb2-b67142a25380}</destination>
+		</relationship>
+	</object>
+</objects>

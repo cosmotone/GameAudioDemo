@@ -21,6 +21,7 @@ namespace HappyHarvest
         
         [Tooltip("Sound triggered when using the item")]
         public AudioClip[] UseSound;
+        public FMODUnity.EventReference FmodEvent;
 
         public abstract bool CanUse(Vector3Int target);
         public abstract bool Use(Vector3Int target);

@@ -1,9 +1,13 @@
+using JetBrains.Annotations;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEngine.Audio;
+using FMOD;
+using FMOD.Studio;
+using FMODUnity;
 
 namespace Template2DCommon
 {
@@ -26,6 +30,7 @@ namespace Template2DCommon
         public SoundData Sound { get; protected set; } = new();
     
         private Queue<AudioSource> m_SFXPool;
+
 
         private void Awake()
         {
@@ -71,6 +76,11 @@ namespace Template2DCommon
             source.Play();
         
             m_SFXPool.Enqueue(source);
+        }
+
+        public void PlayFmodEvent(EventReference fmodEvent, Vector3 position)
+        {
+            RuntimeManager.PlayOneShot(fmodEvent, position);
         }
 
         public void PlayUISound()

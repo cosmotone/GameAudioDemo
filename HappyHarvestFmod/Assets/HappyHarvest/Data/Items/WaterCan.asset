@@ -20,6 +20,11 @@ MonoBehaviour:
   BuyPrice: -1
   VisualPrefab: {fileID: 371218168475551889, guid: 4feaad5eaa6311e4f9c15878951fcdad, type: 3}
   PlayerAnimatorTriggerUse: Watering
-  UseSound:
-  - {fileID: 8300000, guid: 491790dc397106a4f91b2a97a9cd2043, type: 3}
-  - {fileID: 8300000, guid: 7b9c6c1654102ae488014ce2ac133c93, type: 3}
+  UseSound: []
+  FmodEvent:
+    Guid:
+      Data1: 1923654378
+      Data2: 1151029844
+      Data3: 1271913111
+      Data4: -535876277
+    Path: event:/SFX_WaterCan

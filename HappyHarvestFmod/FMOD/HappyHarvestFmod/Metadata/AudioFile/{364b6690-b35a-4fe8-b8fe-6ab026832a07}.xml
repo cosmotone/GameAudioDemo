@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{364b6690-b35a-4fe8-b8fe-6ab026832a07}">
+		<property name="assetPath">
+			<value>OriginalAudio/Character/Stepping on mud-003.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.49881249999999999</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{22440e41-3bc3-4b99-acb2-b67142a25380}</destination>
+		</relationship>
+	</object>
+</objects>

@@ -313,6 +313,13 @@ MonoBehaviour:
   AnimalSound:
   - {fileID: 8300000, guid: 39501ddd076463e4bb48995fd3558d07, type: 3}
   - {fileID: 8300000, guid: 137f00194f482ec488101aea26ffe639, type: 3}
+  FmodEvent:
+    Guid:
+      Data1: 2024628907
+      Data2: 1340179949
+      Data3: -824246601
+      Data4: -144165986
+    Path: event:/SFX_Chicken
   MinRandomSoundTime: 4
   MaxRandomSoundTime: 8
 --- !u!4 &8818855186105769978 stripped

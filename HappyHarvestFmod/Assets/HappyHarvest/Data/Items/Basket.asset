@@ -20,5 +20,11 @@ MonoBehaviour:
   BuyPrice: -1
   VisualPrefab: {fileID: 6290163647523993554, guid: f6c1938a04110fa47910e0c0f7f9b97f, type: 3}
   PlayerAnimatorTriggerUse: Picking
-  UseSound:
-  - {fileID: 8300000, guid: a66a17d14d90dd54bacd17f67e214772, type: 3}
+  UseSound: []
+  FmodEvent:
+    Guid:
+      Data1: 855497517
+      Data2: 1142942715
+      Data3: -564960600
+      Data4: -381252277
+    Path: event:/SFX_PickUpCrop

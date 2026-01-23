@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{d6066acd-3869-4822-ab51-dd61e5e61eb1}">
+		<property name="assetPath">
+			<value>OriginalAudio/Ambience/Background ambience outside - Day.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>62.98075</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{22440e41-3bc3-4b99-acb2-b67142a25380}</destination>
+		</relationship>
+	</object>
+</objects>

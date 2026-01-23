@@ -54,6 +54,13 @@ MonoBehaviour:
   AnimalSound:
   - {fileID: 8300000, guid: fc51cd3fba0b9a34f83e7379bc8e53f4, type: 3}
   - {fileID: 8300000, guid: c2a9afaf051f5a747aeb7ac3b74420ef, type: 3}
+  FmodEvent:
+    Guid:
+      Data1: 2050877550
+      Data2: 1111498296
+      Data3: 1740959159
+      Data4: -884648890
+    Path: event:/SFX_Piggy
   MinRandomSoundTime: 4
   MaxRandomSoundTime: 8
 --- !u!95 &7603948318466802362
@@ -168,6 +175,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 88036800646919882}
     m_Modifications:
+    - target: {fileID: 414600879484914049, guid: 40ac4dd6ef6d32543a6c6e479cca97bf, type: 3}
+      propertyPath: m_labelHash
+      value: 0.01265267
+      objectReference: {fileID: 0}
+    - target: {fileID: 414600879484914049, guid: 40ac4dd6ef6d32543a6c6e479cca97bf, type: 3}
+      propertyPath: m_CategoryHash
+      value: 3.7551097e-31
+      objectReference: {fileID: 0}
+    - target: {fileID: 625588992998009275, guid: 40ac4dd6ef6d32543a6c6e479cca97bf, type: 3}
+      propertyPath: m_labelHash
+      value: 0.011212436
+      objectReference: {fileID: 0}
+    - target: {fileID: 625588992998009275, guid: 40ac4dd6ef6d32543a6c6e479cca97bf, type: 3}
+      propertyPath: m_CategoryHash
+      value: 0.011212436
+      objectReference: {fileID: 0}
     - target: {fileID: 788651128145018661, guid: 40ac4dd6ef6d32543a6c6e479cca97bf, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
@@ -192,9 +215,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -89.447
       objectReference: {fileID: 0}
+    - target: {fileID: 2153540645140871393, guid: 40ac4dd6ef6d32543a6c6e479cca97bf, type: 3}
+      propertyPath: m_labelHash
+      value: 1.3841007e-35
+      objectReference: {fileID: 0}
+    - target: {fileID: 2153540645140871393, guid: 40ac4dd6ef6d32543a6c6e479cca97bf, type: 3}
+      propertyPath: m_CategoryHash
+      value: 0.000007525678
+      objectReference: {fileID: 0}
     - target: {fileID: 2746631249771772747, guid: 40ac4dd6ef6d32543a6c6e479cca97bf, type: 3}
       propertyPath: m_LocalRotation.z
       value: -0.4630938
+      objectReference: {fileID: 0}
+    - target: {fileID: 5059515337768668120, guid: 40ac4dd6ef6d32543a6c6e479cca97bf, type: 3}
+      propertyPath: m_labelHash
+      value: 6.6595564e-15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5059515337768668120, guid: 40ac4dd6ef6d32543a6c6e479cca97bf, type: 3}
+      propertyPath: m_CategoryHash
+      value: 6.6595564e-15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6326166716170167279, guid: 40ac4dd6ef6d32543a6c6e479cca97bf, type: 3}
+      propertyPath: m_labelHash
+      value: 2.2051663e-19
+      objectReference: {fileID: 0}
+    - target: {fileID: 6326166716170167279, guid: 40ac4dd6ef6d32543a6c6e479cca97bf, type: 3}
+      propertyPath: m_CategoryHash
+      value: 2.2051663e-19
       objectReference: {fileID: 0}
     - target: {fileID: 7532223376900813158, guid: 40ac4dd6ef6d32543a6c6e479cca97bf, type: 3}
       propertyPath: m_Name
@@ -277,8 +324,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_CategoryHash: 0
-  m_labelHash: 0
+  m_CategoryHash: 0.00000008140397
+  m_labelHash: 0.00000008140397
   m_SpriteKey: 0
   m_SpriteHash: 555635582
 --- !u!1 &4645669301153184315 stripped
@@ -298,8 +345,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_CategoryHash: 0
-  m_labelHash: 0
+  m_CategoryHash: 3.1049663e-15
+  m_labelHash: 3.1049663e-15
   m_SpriteKey: 0
   m_SpriteHash: 406945782
 --- !u!4 &7633586567731287743 stripped
@@ -324,7 +371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_CategoryHash: 0
-  m_labelHash: 0
+  m_CategoryHash: 0.0000003633638
+  m_labelHash: 0.0000003633638
   m_SpriteKey: 0
   m_SpriteHash: 574200221

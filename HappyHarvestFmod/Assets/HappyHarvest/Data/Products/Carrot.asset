@@ -20,7 +20,12 @@ MonoBehaviour:
   BuyPrice: -1
   VisualPrefab: {fileID: 8966544202626773991, guid: 2e0831dc56cf5294a8962622c990f6bd, type: 3}
   PlayerAnimatorTriggerUse: Eating
-  UseSound:
-  - {fileID: 8300000, guid: f09ed1dd35d0d7d4a814d2991829c7de, type: 3}
-  - {fileID: 8300000, guid: e53864a914cf2d34ca1e1b71b5a745a7, type: 3}
+  UseSound: []
+  FmodEvent:
+    Guid:
+      Data1: -1619731599
+      Data2: 1144684329
+      Data3: -2092795971
+      Data4: 1594413791
+    Path: event:/SFX_ChewingApple
   SellPrice: 10
