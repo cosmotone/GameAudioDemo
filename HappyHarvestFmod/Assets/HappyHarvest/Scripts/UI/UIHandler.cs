@@ -319,7 +319,7 @@ namespace HappyHarvest
         public static void PlayBuySellSound(Vector3 location)
         {
             //SoundManager.Instance.PlaySFXAt(location, s_Instance.MarketSellSound, false);
-            //RuntimeManager.PlayOneShot(MarketSellFmodEvent, location);
+            RuntimeManager.PlayOneShot(s_Instance.MarketSellFmodEvent, location);
         }
 
         public static void FadeToBlack(System.Action onFinished)
