@@ -513,6 +513,27 @@ MonoBehaviour:
   Mixer: {fileID: 24100000, guid: 3b8e3f485549b1e479a56438f6a2e5c7, type: 2}
   UISource: {fileID: 3231547872001653268}
   SFXReferenceSource: {fileID: 258548178}
+  UIOpenEvent:
+    Guid:
+      Data1: -1176211045
+      Data2: 1113386007
+      Data3: -1584596560
+      Data4: -1376310174
+    Path: event:/UI_Open
+  UICloseEvent:
+    Guid:
+      Data1: -1399226369
+      Data2: 1287058082
+      Data3: 606530446
+      Data4: 1669715854
+    Path: event:/UI_Close
+  UISelectEvent:
+    Guid:
+      Data1: -184214558
+      Data2: 1229632445
+      Data3: 1112933800
+      Data4: -152660366
+    Path: event:/UI_Select
 --- !u!114 &3231547872755368590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -525,13 +546,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07b0771e8886c2340855eec75a066f04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AmbienceEvent:
-    Guid:
-      Data1: -1304423111
-      Data2: 1255056882
-      Data3: -1422330708
-      Data4: -1878893313
-    Path: event:/AMB_Exterior
   DayParameterName: Day
 --- !u!114 &3231547872755368591
 MonoBehaviour:

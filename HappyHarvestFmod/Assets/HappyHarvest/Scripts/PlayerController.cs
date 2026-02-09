@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 using FMODUnity;
+using Template2DCommon;
 
 namespace HappyHarvest
 {
@@ -334,6 +335,7 @@ namespace HappyHarvest
             m_Inventory.EquipItem(index);
 
             ToggleToolVisual(true);
+            SoundManager.Instance.PlayUISelect();
         }
 
         public void ToggleControl(bool canControl)

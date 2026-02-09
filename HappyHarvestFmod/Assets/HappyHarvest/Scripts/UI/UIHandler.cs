@@ -153,13 +153,15 @@ namespace HappyHarvest
 
         public static void OpenMarket()
         {
-           s_Instance.OpenMarket_Internal();
+           SoundManager.Instance.PlayUIOpen();
+            s_Instance.OpenMarket_Internal();
            GameManager.Instance.Pause();
         }
 
         public static void CloseMarket()
         {
-            SoundManager.Instance.PlayUISound();
+            //SoundManager.Instance.PlayUISound();
+            SoundManager.Instance.PlayUIClose();
             s_Instance.m_MarketPopup.visible = false;
             GameManager.Instance.Resume();
         }

@@ -26,6 +26,9 @@ namespace Template2DCommon
         public AudioMixer Mixer;
         public AudioSource UISource;
         public AudioSource SFXReferenceSource;
+        public EventReference UIOpenEvent;
+        public EventReference UICloseEvent;
+        public EventReference UISelectEvent;
 
         public SoundData Sound { get; protected set; } = new();
     
@@ -86,6 +89,21 @@ namespace Template2DCommon
         public void PlayUISound()
         {
             UISource.Play();
+        }
+
+        public void PlayUIOpen()
+        {
+            RuntimeManager.PlayOneShot(UIOpenEvent);
+        }
+
+        public void PlayUIClose()
+        {
+            RuntimeManager.PlayOneShot(UICloseEvent);
+        }
+
+        public void PlayUISelect()
+        {
+            RuntimeManager.PlayOneShot(UISelectEvent);
         }
 
         public void Save()
