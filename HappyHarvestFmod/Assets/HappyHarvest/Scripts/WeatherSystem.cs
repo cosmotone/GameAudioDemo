@@ -102,7 +102,7 @@ namespace HappyHarvest
             base.OnInspectorGUI();
             if (EditorGUI.EndChangeCheck())
             {
-                Debug.Log("Updating eather");
+                Debug.Log("Updating Weather");
                 (target as WeatherSystem).EditorWeatherUpdate();
             }
         }

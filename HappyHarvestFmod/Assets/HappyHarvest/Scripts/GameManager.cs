@@ -1,3 +1,4 @@
+using FMODUnity;
 using System;
 using System.Collections.Generic;
 using Unity.Cinemachine;
@@ -76,6 +77,8 @@ namespace HappyHarvest
         
         private float m_CurrentTimeOfTheDay;
 
+        FMOD.Studio.PARAMETER_ID clockParamId;
+
         private void Awake()
         {
             s_Instance = this;
@@ -102,7 +105,11 @@ namespace HappyHarvest
         private void Start()
         {
             m_CurrentTimeOfTheDay = StartingTime;
-            
+
+            FMOD.Studio.PARAMETER_DESCRIPTION clockParamDescription;
+            RuntimeManager.StudioSystem.getParameterDescriptionByName("Clock", out clockParamDescription);
+            clockParamId = clockParamDescription.id;
+
             UIHandler.SceneLoaded();
         }
 
@@ -122,6 +129,8 @@ namespace HappyHarvest
 
                 while (m_CurrentTimeOfTheDay > DayDurationInSeconds)
                     m_CurrentTimeOfTheDay -= DayDurationInSeconds;
+
+                RuntimeManager.StudioSystem.setParameterByID(clockParamId, previousRatio * 24);
 
                 foreach (var handler in m_EventHandlers)
                 {

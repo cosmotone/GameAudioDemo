@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
+using FMODUnity;
 
 namespace HappyHarvest
 {
@@ -133,6 +134,7 @@ namespace HappyHarvest
             
             UIHandler.UpdateInventory(m_Inventory);
             UIHandler.UpdateCoins(m_Coins);
+            RuntimeManager.StudioSystem.setParameterByName("Coins", m_Coins);
         }
 
         private void Update()
@@ -306,6 +308,7 @@ namespace HappyHarvest
             m_Coins += actualCount * product.SellPrice;
             UIHandler.UpdateCoins(m_Coins);
             UIHandler.PlayBuySellSound(transform.position);
+            RuntimeManager.StudioSystem.setParameterByName("Coins", m_Coins);
         }
 
         public bool BuyItem(Item item)
@@ -318,6 +321,7 @@ namespace HappyHarvest
             m_Coins -= item.BuyPrice;
             UIHandler.UpdateCoins(m_Coins);
             UIHandler.PlayBuySellSound(transform.position);
+            RuntimeManager.StudioSystem.setParameterByName("Coins", m_Coins);
             AddItem(item);
             return true;
         }

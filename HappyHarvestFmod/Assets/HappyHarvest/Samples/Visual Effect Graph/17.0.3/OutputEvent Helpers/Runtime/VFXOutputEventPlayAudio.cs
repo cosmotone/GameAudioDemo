@@ -1,5 +1,7 @@
 #if VFX_OUTPUTEVENT_AUDIO
 using UnityEngine.Events;
+using FMODUnity;
+using FMOD.Studio;
 
 namespace UnityEngine.VFX.Utility
 {
@@ -10,11 +12,23 @@ namespace UnityEngine.VFX.Utility
         public override bool canExecuteInEditor => true;
 
         public AudioSource audioSource;
+        public EventReference fmodEvent;
+        public bool useFMOD = false;
 
         public override void OnVFXOutputEvent(VFXEventAttribute eventAttribute)
         {
-            if (audioSource != null)
-                audioSource.Play();
+            if (useFMOD)
+            {
+                if (!fmodEvent.IsNull)
+                {
+                    RuntimeManager.PlayOneShot(fmodEvent);
+                }
+            }
+            else
+            {
+                if (audioSource != null)
+                    audioSource.Play();
+            }
         }
     }
 }

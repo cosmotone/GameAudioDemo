@@ -5,7 +5,8 @@
         "Unity.VisualEffectGraph.Runtime",
         "Unity.RenderPipelines.HighDefinition.Runtime",
         "Cinemachine",
-        "Unity.Cinemachine"
+        "Unity.Cinemachine",
+        "FMODUnity"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

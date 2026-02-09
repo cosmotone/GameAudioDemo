@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="MixerGroup" id="{32728b14-cc03-4fc4-a078-d792cce65161}">
+		<property name="name">
+			<value>AMB Ext</value>
+		</property>
+		<relationship name="effectChain">
+			<destination>{cb402e6b-b580-41c6-b531-0a8d162567f9}</destination>
+		</relationship>
+		<relationship name="panner">
+			<destination>{052b864d-7424-4322-846e-746ae9e7ed40}</destination>
+		</relationship>
+		<relationship name="output">
+			<destination>{c5e78701-6d6a-4527-91be-fb3b358154ac}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusEffectChain" id="{cb402e6b-b580-41c6-b531-0a8d162567f9}">
+		<relationship name="effects">
+			<destination>{0540fa24-6ebe-48e0-9e8f-76584a7c5eb9}</destination>
+			<destination>{e9642537-6ca0-47d2-a718-6f719dff55f1}</destination>
+		</relationship>
+	</object>
+	<object class="MixerBusPanner" id="{052b864d-7424-4322-846e-746ae9e7ed40}" />
+	<object class="MultibandEqEffect" id="{0540fa24-6ebe-48e0-9e8f-76584a7c5eb9}">
+		<property name="frequencyA">
+			<value>22000</value>
+		</property>
+	</object>
+	<object class="MixerBusFader" id="{e9642537-6ca0-47d2-a718-6f719dff55f1}" />
+</objects>

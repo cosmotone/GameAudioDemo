@@ -4,6 +4,7 @@ using Template2DCommon;
 using UnityEngine;
 using UnityEngine.UIElements;
 using Cursor = UnityEngine.Cursor;
+using FMODUnity;
 
 
 namespace HappyHarvest
@@ -32,7 +33,8 @@ namespace HappyHarvest
         
         [Header("Sounds")] 
         public AudioClip MarketSellSound;
-        
+        public EventReference MarketSellFmodEvent;
+
         protected UIDocument m_Document;
         
         protected List<VisualElement> m_InventorySlots;
@@ -316,7 +318,8 @@ namespace HappyHarvest
 
         public static void PlayBuySellSound(Vector3 location)
         {
-            SoundManager.Instance.PlaySFXAt(location, s_Instance.MarketSellSound, false);
+            //SoundManager.Instance.PlaySFXAt(location, s_Instance.MarketSellSound, false);
+            //RuntimeManager.PlayOneShot(MarketSellFmodEvent, location);
         }
 
         public static void FadeToBlack(System.Action onFinished)
